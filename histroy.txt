@@ -48,4 +48,57 @@
 
    25  docker network  inspect abc
 
+   26  history
 
+   27  yum install python-pip -y
+
+   28  pip install docker-compose -y
+
+   29  pip install docker-compose 
+
+   30  pip3 install docker-compose 
+
+   31  whereis docker-compose
+
+   32  cd /usr/local/bin/docker-compose
+
+   33  In -fs /usr/local/bin/docker-compose /usr/bin/docker-compose
+
+   34  ln -fs /usr/local/bin/docker-compose /usr/bin/docker-compose
+
+   35  docker-compose 
+
+   36  docker-compose -v
+
+   37  vim docker-compose.yaml
+   38 adding this file - version: '2'
+
+services:
+
+  compose-test:
+
+    image: centos
+
+    links:
+
+      - compose-db
+
+    command: /usr/bin/curl compose-db:6379
+
+  compose-db:
+
+    image: redis
+
+    expose:
+
+      - "6379"
+
+
+
+   39  docker-compose up
+
+   40  docker-compose up -d
+
+   41  vim docker-compose.yaml
+
+   42  docker-compose up -d
